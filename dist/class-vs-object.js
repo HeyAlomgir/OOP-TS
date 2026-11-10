@@ -13,4 +13,3 @@ console.log(myCar.color);
 console.log(myCar2.brand);
 console.log(myCar2.color);
 export {};
-//# sourceMappingURL=class-vs-object.js.map
