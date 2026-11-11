@@ -1,12 +1,17 @@
 class Employee {
     constructor(public name: string, private _baseSallary: number) { };
 
-    get baseSallary() {
+    get baseSallary(): number {
         return this._baseSallary;
     }
 
     set baseSallary(newSallay: number) {
         this._baseSallary = newSallay;
+    }
+
+    get BonusSallary(): number {
+        return this._baseSallary + 90000;
+
     }
 
 
@@ -15,4 +20,4 @@ class Employee {
 
 const employee = new Employee("Fahim", 50000);
 employee.baseSallary = 3444;
-console.log(employee.name + " " + employee.baseSallary)
+console.log(employee.name + " " + employee.baseSallary + " " + employee.BonusSallary)
