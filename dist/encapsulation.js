@@ -17,6 +17,5 @@ class Employee {
     }
 }
 const employee = new Employee("Fahim", 50000);
-employee.baseSallary = 3444;
 console.log(employee.name + " " + employee.baseSallary + " " + employee.BonusSallary);
 export {};
