@@ -1,11 +1,14 @@
 class Shorom {
     brand;
     color;
-    price;
-    constructor(brand, color, price) {
+    _price;
+    constructor(brand, color, _price) {
         this.brand = brand;
         this.color = color;
-        this.price = price;
+        this._price = _price;
+    }
+    get price() {
+        return this._price;
     }
 }
 const User = new Shorom("Corola", "white", 2000000);

@@ -2,8 +2,12 @@ class Shorom {
     constructor(
         public brand: string,
         public color: string,
-        public price: number,
+        private _price: number,
     ) { }
+
+    get price(): number {
+        return this._price;
+    }
 }
 
 const User = new Shorom("Corola", "white", 2000000);
