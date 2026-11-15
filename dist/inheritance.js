@@ -18,6 +18,9 @@ class Employee {
     get bonousSallary() {
         return this._baseSallary + 5000;
     }
+    describe() {
+        return `${this.name} earns ${this.baseSallary}`;
+    }
 }
 const employee = new Employee("Alomgir", 3000);
 console.log(employee.name);
@@ -26,4 +29,5 @@ employee.baseSallary = 20000;
 ;
 console.log(employee.baseSallary);
 console.log(employee.bonousSallary);
+console.log("Describe method : ", employee.describe());
 export {};
