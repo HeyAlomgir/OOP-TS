@@ -36,9 +36,9 @@ class Manager extends Employee {
         this.TimMemberCount = TimMemberCount;
     }
     DesMan() {
-        return `${this.name}, ${this.baseSallary},${this.TimMemberCount}`;
+        return `${this.name}, ${this._baseSallary},${this.TimMemberCount}`;
     }
 }
 const manager = new Manager("Alomgir", 30000, 20);
-console.log("DesMna:", manager);
+console.log("DesMam:", manager);
 export {};

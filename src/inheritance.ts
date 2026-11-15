@@ -1,7 +1,7 @@
 class Employee {
     constructor(
         public name: string,
-        private _baseSallary: number
+        protected _baseSallary: number
     ) { };
     get baseSallary(): number {
         return this._baseSallary
@@ -37,8 +37,8 @@ class Manager extends Employee {
         super(name, _baseSallary)
     }
     DesMan(): string {
-        return `${this.name}, ${this.baseSallary},${this.TimMemberCount}`
+        return `${this.name}, ${this._baseSallary},${this.TimMemberCount}`
     }
 }
 const manager = new Manager("Alomgir", 30000, 20);
-console.log("DesMna:", manager);
+console.log("DesMam:", manager);
