@@ -23,11 +23,22 @@ class Employee {
     }
 }
 const employee = new Employee("Alomgir", 3000);
-console.log(employee.name);
-console.log(employee.baseSallary);
-employee.baseSallary = 20000;
-;
-console.log(employee.baseSallary);
-console.log(employee.bonousSallary);
-console.log("Describe method : ", employee.describe());
+// console.log(employee.name);
+// console.log(employee.baseSallary)
+// employee.baseSallary = 20000;;
+// console.log(employee.baseSallary)
+// console.log(employee.bonousSallary)
+// console.log("Describe method : ", employee.describe());
+class Manager extends Employee {
+    TimMemberCount;
+    constructor(name, _baseSallary, TimMemberCount) {
+        super(name, _baseSallary);
+        this.TimMemberCount = TimMemberCount;
+    }
+    DesMan() {
+        return `${this.name}, ${this.baseSallary},${this.TimMemberCount}`;
+    }
+}
+const manager = new Manager("Alomgir", 30000, 20);
+console.log("DesMna:", manager);
 export {};
