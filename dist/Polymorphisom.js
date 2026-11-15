@@ -8,6 +8,12 @@ class Employee {
     get baseSallary() {
         return this._baseSallary;
     }
+    set baseSallary(newSallary) {
+        if (newSallary < 0) {
+            throw new Error("Sallry cannot be negative");
+        }
+        this._baseSallary = newSallary;
+    }
 }
 const employee = new Employee("ALomgir", 34444);
 console.log(employee.baseSallary);

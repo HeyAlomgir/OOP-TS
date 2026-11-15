@@ -6,6 +6,15 @@ class Employee {
     get baseSallary() {
         return this._baseSallary;
     }
+    set baseSallary(newSallary: number) {
+        if (newSallary < 0) {
+            throw new Error("Sallry cannot be negative")
+
+
+        }
+        this._baseSallary = newSallary;
+    }
+
 
 }
 
